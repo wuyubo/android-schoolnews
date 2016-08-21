@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="news.gdut.auto.iot2.Activity.NewsDetailsActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:background="@color/ivory">
+
+        <WebView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="35dp"
+            android:layout_margin="10dp"
+            android:id="@+id/detailNews"
+            android:background="@color/ivory">
+
+        </WebView>
+
+            <RelativeLayout
+                android:id="@+id/activity_news_details_relative_is_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:background="@color/ivory">
+                <ProgressBar
+                    android:id="@+id/activity_news_details_progress_bar"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ivory"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/activity_news_details_progress_bar"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/isLoanding_text"
+                    android:text="@string/isLoading"
+                    android:textColor="#434343"
+                    android:textSize="14sp"
+                    android:background="@color/ivory"/>
+            </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

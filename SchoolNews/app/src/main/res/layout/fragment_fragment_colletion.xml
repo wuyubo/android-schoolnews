@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="news.gdut.auto.iot2.schoolnews.fragment.FragmentColletion"
+    android:background="@drawable/selector_listview_item_split">
+
+
+    <ListView
+        android:id="@+id/fragment_news_listviewc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:dividerHeight="0dp"
+        android:divider="@color/white"
+        android:paddingBottom="30dp"></ListView>
+
+</FrameLayout>

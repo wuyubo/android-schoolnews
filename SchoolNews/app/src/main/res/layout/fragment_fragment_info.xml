@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="news.gdut.auto.iot2.schoolnews.fragment.FragmentInfo"
+    android:background="@drawable/info_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="吴玉波"
+                android:typeface="monospace"
+                android:id="@+id/tv_name"
+                android:textSize="35dp"
+                android:layout_margin="30dp"/>
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:text="自动化学院"
+                android:id="@+id/tv_college"
+                android:layout_toRightOf="@+id/tv_name"
+                android:textSize="35dp"
+                android:layout_margin="30dp"/>
+
+
+            <TextView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tv_type"
+                android:text="学生"
+                android:layout_toRightOf="@+id/tv_college"
+                android:textSize="35dp"
+                android:layout_margin="30dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+User(id, name, sex, professional, school_id, College_id, major_id)
+School(id, name, url)
+College(id, name, url, school_id)
+Major(id, name, keys)
+NewsInform(id, title, type, src_url, img_url, content,time, is_valid,  school_id, department_id)
+Collection(id, user_id, newsInform_id, time)
+Department£¨id, name, school_id£©
+

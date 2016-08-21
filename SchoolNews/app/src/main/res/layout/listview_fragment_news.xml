@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_listview_item_split">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+        android:background="@color/ivory">
+
+        <TextView
+            android:id="@+id/fragment_news_listview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="考研必备的英语单词和一套很棒的记忆法，需瞧~"
+            android:textColor="#313233"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/fragment_news_listview_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_news_listview_title"
+            android:layout_marginTop="5dp"
+            android:maxLines="4"
+            android:text="怎么说"
+            android:textColor="#545454"
+            android:textSize="10sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/fragment_question_listview_relative_buttom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_news_listview_content"
+            android:layout_marginTop="8dp">
+
+
+            <View
+                android:id="@+id/fragment_question_listview_divide1"
+                android:layout_width="1dp"
+                android:layout_height="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toRightOf="@+id/fragment_news_listview_time"
+                android:background="#7A7C80"
+                />
+            <TextView
+                android:id="@+id/fragment_news_listview_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="我_爱_中_华"
+                android:textColor="#7A7C80"
+                android:textSize="15sp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/fragment_news_listview_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:text="2010-10-12"
+                android:textColor="#7A7C80"
+                android:textSize="12sp"
+                android:layout_marginRight="5dp"/>
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/fragment_divide"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/fragment_question_listview_relative_buttom"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="3dp"
+            android:background="#7A7C80"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

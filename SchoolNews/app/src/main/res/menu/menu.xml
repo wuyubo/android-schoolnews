@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_collection"
+        android:icon="@drawable/icon_collection_normal"
+        app:showAsAction="ifRoom"
+        android:title="@string/collection"/>
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/selector_icon_share"
+        app:showAsAction="ifRoom"
+        android:title="@string/share"/>
+    <item
+        android:id="@+id/menu_setting"
+        android:icon="@drawable/icon_setting"
+        app:showAsAction="never"
+        android:title="@string/setting"/>
+    <item
+        android:id="@+id/menu_help"
+        android:icon="@drawable/icon_help"
+        app:showAsAction="never"
+        android:title="@string/help"/>
+    <item
+        android:id="@+id/menu_advice"
+        android:icon="@drawable/icon_advice"
+        app:showAsAction="never"
+        android:title="@string/advice"/>
+
+</menu>
